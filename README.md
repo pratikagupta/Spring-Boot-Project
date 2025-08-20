@@ -18,3 +18,9 @@ How to fix this issue in mac -
 2. Kill that process => kill -9 <PID> (process ID)
 3. Verify the port is free => lsof -i :8080 
  
+
+New term - 
+1. Concreate class
+2. proxy classes
+3. Required-args constructor
+4. POJO class
