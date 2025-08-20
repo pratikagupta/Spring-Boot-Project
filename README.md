@@ -24,3 +24,10 @@ New term -
 2. proxy classes
 3. Required-args constructor
 4. POJO class
+
+
+orm
+
+1:1 relationship
+1: many relationship
+many to many relationship
