@@ -31,3 +31,9 @@ orm
 1:1 relationship
 1: many relationship
 many to many relationship
+
+
+
+Owing side and inverse side in 1:1 relationship
+
+Hibernate Dirty Checking
