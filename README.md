@@ -33,7 +33,24 @@ orm
 many to many relationship
 
 
-
 Owing side and inverse side in 1:1 relationship
 
 Hibernate Dirty Checking
+
+Public Key Retrieval is not allowed - Getting this error in Dbeaver
+
+Enable allowPublicKeyRetrieval in connection -
+1. In DBeaver, go to your Database Connection → Edit Connection.
+2. Navigate to the Driver Properties tab.
+3. Add a new property:
+   - Name: allowPublicKeyRetrieval
+   - Value: true
+4. Also check if useSSL is set correctly (often false if you're on local/dev).
+
+When you connect to MySQL 8+ with a client like DBeaver, the default authentication plugin is often:
+caching_sha2_password (newer, more secure than old mysql_native_password). 
+With this plugin:
+The client (DBeaver) needs the server’s RSA public key to encrypt your password before sending it.
+By default, the MySQL JDBC driver does not allow fetching the key from the server automatically (for security reasons).
+If it tries and the setting isn’t enabled → you get:
+Public Key Retrieval is not allowed
