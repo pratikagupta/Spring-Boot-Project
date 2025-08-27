@@ -55,7 +55,6 @@ By default, the MySQL JDBC driver does not allow fetching the key from the serve
 If it tries and the setting isn’t enabled → you get:
 Public Key Retrieval is not allowed
 
-
 http://localhost:9090/swagger-ui/index.html
 http://localhost:9090/v3/api-docs
 
