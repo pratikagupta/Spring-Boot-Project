@@ -59,3 +59,14 @@ http://localhost:9090/swagger-ui/index.html
 http://localhost:9090/v3/api-docs
 
 http://localhost:8080/posts
+
+
+Testing - 
+1. Mock
+2. ArgumentCaptor
+3. assertThatThrownBy
+4. @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+5. @Import(TestContainerConfiguration.class)
+6. @ExtendWith(MockitoExtension.class)
+7. Spy
+8. InjectMocks
